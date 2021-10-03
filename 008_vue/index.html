@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Photos</h1>
+    </header>
+
+    <div class="container">
+        <div id="img_unit">
+            <div class="photo" v-for="Photo in Photos">
+                <img :src="Photo.path">
+                <div class="inner">
+                    <p>
+                        {{ Photo.caption}}
+                        <span>{{ Photo.name }}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="https://unpkg.com/vue"></script>
+        <script>
+            var app = new Vue({
+                el: '#img_unit',
+                data: {
+                    Photos: []
+                },
+                created: function() {
+                    var self = this;
+                    $.getJSON('https://h2o-space.com/htmlbook/images.php', function(data) {
+                        self.Photos = data;
+                    });
+                }
+            });
+
+
+            // var app = new Vue({
+            //     el: '#vue_unit',
+            //     data: {
+            //         message: 'Vue.jsで書き換えました',
+            //         greeting: 'こんにちは'
+            //     }
+            // });
+        </script>
+</body>
+</html>
