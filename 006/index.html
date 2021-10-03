@@ -35,6 +35,36 @@
     </dic>
 
     <script>
+        // var ajax = new XMLHttpRequest();
+        
+        // ajax.open('GET', 'https://h2o-space.com/htmlbook/images.php');
+        // ajax.responseType = 'json';
+        // ajax.send(null);
+
+        // ajax.onreadystatechange = function() {
+        //     if(ajax.readyState === 4 && ajax.status === 200) {
+        //         for (var i=0; i<this.response.length; i++) {
+        //             var data = this.response[i];
+
+        //             var img = document.createElement('img');
+        //             img.setAttribute('src', data.path);
+
+        //             var caption =document.createElement('div');
+        //             caption.className = 'inner';
+        //             caption.innerHTML = '<p>' + data.caption + '<span>' + data.name + '</span></p>';
+
+        //             var div = document.createElement('div');
+        //             div.className = 'photo';
+        //             div.appendChild(img);
+        //             div.appendChild(caption);
+
+        //             document.getElementById('img_unit').appendChild(div);
+        //         }
+        //     }
+        // };
+
+
+
         var images = [
             {
                 "path" : "../img/joanna-kosinska-ToV0rS9nTYs-unsplash.jpg",
@@ -73,6 +103,7 @@
             
             document.getElementById('img_unit').appendChild(div);
         }
+        
     </script>
 </body>
 </html>
