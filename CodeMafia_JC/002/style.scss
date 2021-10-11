@@ -1,0 +1,20 @@
+.parent{
+    color: blue;
+
+    & > .element {
+        color: purple;
+        
+        &.second-child {
+            color: black;
+        }
+    }
+}
+// & の後、半角スペースの有無で表示が変わってくる！！
+
+.element{
+    color: red;
+}
+
+.second-child{
+    color: black;
+}
