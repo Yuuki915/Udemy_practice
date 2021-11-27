@@ -60,29 +60,82 @@ console.log(typeof null);
 // lastName = "Schmedtmann";
 // console.log(lastName);
 
-//Math operators
-const now = 2037;
-const ageJonas = now - 1991;
-const ageSarah = now - 2018;
-console.log(ageJonas, ageSarah);
+// //Math operators
+// const now = 2037;
+// const ageJonas = now - 1991;
+// const ageSarah = now - 2018;
+// console.log(ageJonas, ageSarah);
 
-console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+// console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+
+// const firstName = "Jonas";
+// const lastName = "Schmedtmann";
+// console.log(firstName + " " + lastName);
+
+// // Assignment operators
+// let x = 10 + 5;
+// x += 10;
+// x *= 4;
+// x++;
+// x--;
+// x--;
+// console.log(x);
+
+// // Comparison operators
+// console.log(ageJonas > ageSarah);
+// console.log(ageSarah >= 2018);
+
+// console.log(now - 1991 > now - 2018);
+
+// let x, y;
+// x = y = 25 - 10 - 5;
+// console.log(x, y);
+
+// const averageAge = (ageJonas + ageSarah) / 2;
+// console.log(ageJonas, ageSarah, averageAge);
+
+// test 2
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// const markHigherBMI = BMIMark > BMIJohn;
+
+// console.log(BMIMark, BMIJohn, markHigherBMI);
+
+// test 1
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
+
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// const markHigherBMI = BMIMark > BMIJohn;
+
+// console.log(BMIMark, BMIJohn, markHigherBMI);
 
 const firstName = "Jonas";
-const lastName = "Schmedtmann";
-console.log(firstName + " " + lastName);
+const job = "teature";
+const birthYear = 1991;
+const year = 2037;
 
-// Assignment operators
-let x = 10 + 5;
-x += 10;
-x *= 4;
-x++;
-x--;
-x--;
-console.log(x);
+const jonas =
+  "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+console.log(jonas);
 
-// Comparison operators
-console.log(ageJonas > ageSarah);
-console.log(ageSarah >= 18);
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(jonasNew);
 
-console.log(now - 1991 > now - 2019);
+console.log(`Just a regular string...`);
+
+console.log("String with \n\
+multipule \n\
+lines");
+
+console.log(`String
+multipule
+lines`);
