@@ -174,43 +174,80 @@
 
 // ----------
 // 39
-const friend1 = "Micheal";
-const friend2 = "Steven";
-const friend3 = "Peter";
+// const friend1 = "Micheal";
+// const friend2 = "Steven";
+// const friend3 = "Peter";
+
+// const friends = ["Michael", "Steven", "Peter"];
+// console.log(friends);
+
+// const y = new Array(1991, 1984, 2008, 2020);
+
+// console.log(friends[0]);
+// console.log(friends[2]);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+// friends[2] = "Jay";
+// console.log(friends);
+// // friends = ["Bob", "Alice"];  // ← cannot do like this
+
+// const firstName = "Jonas";
+// const jonas = [firstName, "Schmedmann", 2037 - 1991, "teacher", friends];
+// console.log(jonas);
+
+// // Exercise
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+// const years = [1990, 1967, 2002, 2010, 2018];
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+// console.log(age1, age2, age3);
+
+// const ages = [
+//   calcAge(years[0]),
+//   calcAge(years[1]),
+//   calcAge(years[years.length - 1]),
+// ];
+// console.log(ages);
+
+// ----------
+// 40
 
 const friends = ["Michael", "Steven", "Peter"];
+
+// Add elements
+const newLength = friends.push("Jay"); // Last
+console.log(friends);
+console.log(newLength);
+
+friends.unshift("John"); // First
 console.log(friends);
 
-const y = new Array(1991, 1984, 2008, 2020);
-
-console.log(friends[0]);
-console.log(friends[2]);
-
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
-
-friends[2] = "Jay";
+// Remove elements
+friends.pop(); // Last
+const popped = friends.pop();
+console.log(popped);
 console.log(friends);
-// friends = ["Bob", "Alice"];  // ← cannot do like this
 
-const firstName = "Jonas";
-const jonas = [firstName, "Schmedmann", 2037 - 1991, "teacher", friends];
-console.log(jonas);
+friends.shift(); // First
+console.log(friends);
 
-// Exercise
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-};
-const years = [1990, 1967, 2002, 2010, 2018];
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob"));
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1, age2, age3);
+friends.push(23);
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+console.log(friends.includes(23));
 
-const ages = [
-  calcAge(years[0]),
-  calcAge(years[1]),
-  calcAge(years[years.length - 1]),
-];
-console.log(ages);
+if (friends.includes("Steven")) {
+  console.log("You have a friend called Steven");
+}
+
+// ----------
+// 41
