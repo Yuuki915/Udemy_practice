@@ -117,4 +117,4 @@ document.querySelector('.again').addEventListener('click', function () {
 });
 
 // ----------
-// 77
+// 7
