@@ -24,7 +24,8 @@ btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 
 // ----------
-// 81 -
+// 81
+
 document.addEventListener('keydown', function (e) {
   console.log(e.key);
 
@@ -32,3 +33,6 @@ document.addEventListener('keydown', function (e) {
     closeModal();
   }
 });
+
+// ----------
+// 82
